@@ -9,7 +9,7 @@ struct TrieNode {
     bool finished; // 이 노드에서 종료되는 문자열이 있는지
     bool hasNext; // 자식 노드가 있는지
   
-    TrieNode() {
+    TrieNode() { // 생성자
         for(int i = 0;i < NUMBER;i++)children[i] = NULL;
         finished = false;
         hasNext = false;
@@ -18,7 +18,7 @@ struct TrieNode {
     void insert(string str) {
         if(str.size() == 0) {
             finished = true;
-//  		if(hasNext)answer = false;  // 접두어 판단할 때 사용
+//  	    if(hasNext)answer = false;  // 접두어 판단할 때 사용
         }
         else {
             int next = str[0] - '0';
