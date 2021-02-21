@@ -1,3 +1,5 @@
+#include <queue>
+
 [ Queue ]
 
 FIFO(first-in first-out) 방식.
