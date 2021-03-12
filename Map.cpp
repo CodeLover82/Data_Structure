@@ -28,7 +28,7 @@ ex) if(m.find("x") != m.end()){}
 < 원소 삭제 >
 1. 특정 위치의 요소 삭제
 map.erase(iter);
-ex) m.erase(m.begin() + 2);
+ex) m.erase(m.begin() + 2);   => 이거 틀림. 잘못적음.
 
 2. key 값으로 삭제
 map.erase(key);
